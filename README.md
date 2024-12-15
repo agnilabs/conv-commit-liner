@@ -1,4 +1,4 @@
-# conv-commit-liner
+# @agnilabs/conv-commit-liner
 
 A lightweight conventional commit message generator that analyzes your staged changes and suggests appropriate commit messages.
 
@@ -6,10 +6,10 @@ A lightweight conventional commit message generator that analyzes your staged ch
 
 ```bash
 # Using npm
-npm install -g conv-commit-liner
+npm install -g @agnilabs/conv-commit-liner
 
 # Using bun
-bun install -g conv-commit-liner
+bun install -g @agnilabs/conv-commit-liner
 ```
 
 ## Usage
