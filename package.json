@@ -1,11 +1,14 @@
 {
-  "name": "conv-commit-liner",
+  "name": "@agnilabs/conv-commit-liner",
   "type": "module",
-  "version": "0.0.0",
-  "main": "./dist/index.cjs",
+  "version": "0.0.1",
+  "description": "A lightweight conventional commit message generator",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "description": "",
+  "bin": {
+    "ccl": "./dist/cli.js"
+  },
   "exports": {
     "types": "./dist/index.d.ts",
     "import": "./dist/index.js",
@@ -18,19 +21,31 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
-    "bun"
+    "bun",
+    "conventional-commits",
+    "git",
+    "commit",
+    "cli"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wobsoriano/pkg-name#readme",
+  "homepage": "https://github.com/agnilabs/conv-commit-liner#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wobsoriano/pkg-name.git"
+    "url": "git+https://github.com/agnilabs/conv-commit-liner.git"
   },
-  "bugs": "https://github.com/wobsoriano/pkg-name/issues",
-  "author": "Robert Soriano <sorianorobertc@gmail.com>",
+  "bugs": "https://github.com/agnilabs/conv-commit-liner/issues",
+  "author": "agni labs",
   "devDependencies": {
     "bun-plugin-dts": "^0.3.0",
-    "@types/bun": "^1.1.10"
+    "@types/bun": "^1.1.10",
+    "@types/node": "^20.10.4"
+  },
+  "dependencies": {
+    "simple-git": "^3.21.0",
+    "commander": "^11.1.0"
   }
 }
